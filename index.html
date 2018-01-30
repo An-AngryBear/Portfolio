@@ -19,7 +19,7 @@
     <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
 
     <!-- Styles -->
-    <link href="css/grayscale.min.css" rel="stylesheet">
+    <link href="css/grayscale.css" rel="stylesheet">
 
   </head>
 
@@ -35,13 +35,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about-head">About</a>
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects-head">Projects</a>
+              <a class="nav-link js-scroll-trigger" href="#download">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact-head">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -56,7 +56,7 @@
             <div class="col-lg-8 mx-auto">
               <h1 class="brand-heading">Jason Monahan-Rial</h1>
               <p class="intro-text">Software Developer</p>
-              <a href="#about-head" class="btn btn-circle js-scroll-trigger">
+              <a href="#about" class="btn btn-circle js-scroll-trigger">
                 <i class="fa fa-angle-double-down animated"></i>
               </a>
             </div>
@@ -66,20 +66,22 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="content-section text-center">
-      <div class="container">
+    <section id="about" class="about-section text-center">
+      <div class="container about-container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2 id="about-head">About Jason</h2>
+            <h2 id="about" class="about-head">About Jason</h2>
             <p>I'm a full-stack apprentice software developer with strong communication and problem-solving skills. I find joy in bashing my head against code until the problem is solved and learning more efficient ways to accomplish tasks. </p>
             <p>My software development story began in late 2016 as I was exploring different careers paths. As a guy who has always had an interest in tech, naturally I came across software development. One thing led to another and I began to teach myself code by taking classes online. I immediately fell in love with the logic of JavaScript. A friend of mine recommended that I go to a software development bootcamp and hone my skills. I then began my path as a programmer by attending the Nashville Software School.
             </p>
-            <a href="#download" class="btn btn-circle js-scroll-trigger">
+            <div class="arrow-btns">
+              <a href="#download" class="btn btn-circle js-scroll-trigger">
                 <i class="fa fa-angle-double-down animated"></i>
-            </a>
-            <a href="#page-top" class="btn btn-circle js-scroll-trigger">
+              </a>
+              <a href="#page-top" class="btn btn-circle js-scroll-trigger">
                 <i class="fa fa-angle-double-up animated"></i>
-            </a>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -87,15 +89,23 @@
 
     <!-- Projects Section -->
     <section id="download" class="download-section content-section text-center">
-      <div class="container">
+      <div class="container project-container">
         <div class="col-lg-8 mx-auto">
           <h2 id="projects-head">Projects</h2>
           <a href="https://github.com/An-AngryBear/Patch-Notes" class="project-link">Patch Notes</a>
-          <a href="https://github.com/An-AngryBear/Down2Game" class="project-link">Down2Game</a>
-          <a href="#contact-head" class="btn btn-circle js-scroll-trigger">
+          <p>A web application that utilizes the Steam API, so PC gamers can access their accounts, 
+            display their owned games, and find the recent updates for their favorite games. It was 
+            built not only with AngularJS, but Firebase, Sass, Grunt and Node.js proxy server.</p>
+          <a href="https://down2game.herokuapp.com/" class="project-link">Down2Game</a>
+          <p>A web application with the purpose of matching online gamers together based on
+            personality traits, gaming habits, etc. It features a player matching system, live chat, 
+            a customizable profile, and access to the International Games Database. It was built using 
+            Node.js, PostGreSQL, Sequelize, Jquery, Socket.io, AWS S3, Grunt, and Pug.
+          </p>
+          <a href="#contact" class="btn btn-circle js-scroll-trigger">
               <i class="fa fa-angle-double-down animated"></i>
           </a>
-          <a href="#about-head" class="btn btn-circle js-scroll-trigger">
+          <a href="#about" class="btn btn-circle js-scroll-trigger">
               <i class="fa fa-angle-double-up animated"></i>
             </a>
         </div>
@@ -103,11 +113,11 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="content-section text-center">
-      <div class="container">
+    <section id="contact" class="contact-section text-center">
+      <div class="container contact-container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2 id="contact-head">Contact</h2>
+            <h2 id="contact-head" class="contact-head">Contact</h2>
             <ul class="list-inline banner-social-buttons">
               <li class="list-inline-item">
                 <a href="mailto:monahajt@gmail.com" class="btn btn-default btn-lg">
@@ -136,14 +146,6 @@
       </div>
     </section>
 
-
-    <!-- Footer -->
-    <footer>
-      <div class="container text-center">
-        <p>Copyright &copy; Jason Monahan-Rial 2017</p>
-      </div>
-    </footer>
-
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
@@ -153,7 +155,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!--  scripts for this template -->
-    <script src="js/grayscale.min.js"></script>
+    <script src="js/grayscale.js"></script>
 
   </body>
 

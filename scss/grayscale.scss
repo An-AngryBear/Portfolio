@@ -25,9 +25,7 @@ h5,
 h6 {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
-
-  margin: 0 0 35px;
-
+  margin: 0 0 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -57,7 +55,6 @@ a {
   &:focus,
   &:hover {
     text-decoration: none;
-
     color: darken($primary, 20%);
   }
 }
@@ -116,37 +113,29 @@ a {
     &.navbar-shrink {
       padding-top: 10px;
       padding-bottom: 10px;
-
       border-bottom: 1px solid fade-out(white, .7);
       background: black;
     }
     .nav-link.active {
       outline: none;
-      background-color: rgba(white, .3);
+      border-radius: 2px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background-color: $primary;
+      color: black;
       &:hover {
-        color: white;
+        color: gray;
       }
     }
   }
 }
 
-#contact-head, #projects-head {
-  padding-top: 1em;
-}
-
-#about-head {
-  padding-top: .5em;
-}
-
 .masthead {
   display: table;
-
   width: 100%;
-  height: auto;
+  height: 100vh;
   padding: 200px 0;
-
   text-align: center;
-
   color: white;
   background: url('../img/intro-bg.jpeg') no-repeat bottom center scroll;
   background-color: black;
@@ -165,7 +154,7 @@ a {
       font-size: 18px;
     }
   }
-  @media(min-width:768px) {
+  @media(min-width:600px) {
     height: 100%;
     padding: 0;
     .intro-body {
@@ -181,15 +170,12 @@ a {
 
 .btn-circle {
   font-size: 26px;
-
   width: 55px;
   height: 55px;
   line-height: 38px;
-
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
-
   color: white;
   border: 2px solid white;
   border-radius: 100% !important;
@@ -202,14 +188,26 @@ a {
   }
 }
 
-.content-section {
-  padding-top: 150px;
-  padding-bottom: 150px;
+.text-center {
+  position: relative;
+}
+    
+    
+.about-section, .contact-section, .download-section {
+  height: 100vh;
+}
+
+.about-container, .contact-container, .project-container {
+  position: absolute;
+  top:45%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
 }
 
 .download-section {
   color: white;
-  background: url('../img/greenbg.jpg') no-repeat center center scroll;
+  background: url('../img/darkgreen.jpg') no-repeat center center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -219,34 +217,18 @@ a {
 
 .project-link {
   display: block;
-  margin-bottom: 1em;
-  font-size: 1.5em;
-  color: white;
-}
-
-#map {
-  width: 100%;
-  height: 300px;
-}
-@media(min-width:992px) {
-  .content-section {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-  #map {
-    height: 350px;
-  }
+  margin-bottom: .8em;
+  font-size: 1.2em;
+  color: rgb(75, 73, 216);
 }
 
 .btn {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
-
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-transform: uppercase;
-
   border-radius: 0;
 }
 
