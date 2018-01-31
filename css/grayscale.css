@@ -145,7 +145,7 @@ a {
   position: relative; }
 
 .about-section, .contact-section, .download-section {
-  height: 100vh; }
+  min-height: 100vh; }
 
 .about-container, .contact-container, .project-container {
   position: absolute;
